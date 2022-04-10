@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\Personal Data and Pre Windows\\WEB DEVELOPMENT"
+		},
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"assignment01/Q05",
+			""
+		],
+		"maven.view": "flat"
+	}
+}

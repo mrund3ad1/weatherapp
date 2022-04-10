@@ -1,0 +1,412 @@
+:root{
+    --p-blue: #1B9DF0;
+    --s-blue: #0288D1;  /* clouds, button */
+    --p-yellow: #F0A500;    
+    --p-orange: #FF914D;
+    --p-grey: #737373;  /* placeholder*/
+    --s-grey: #EFEFEF;  /* input field */
+    --p-black: #231F20;
+
+    --p-font: 'Montserrat', sans-serif;;
+    --s-font: 'Raleway', sans-serif;;
+    --t-font: 'Open Sans', sans-serif;;
+    --q-font: 'Shadows Into Light', cursive;;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Pre defined */
+
+.flexed{
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: 0;
+    box-shadow: 0;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+.decor-img{
+    position: absolute;
+}
+    .decor-img_cloud{
+        width: 4%;
+        left: 63.7%;
+        top: 4%;
+        filter: invert(33%) sepia(32%) saturate(5402%) hue-rotate(181deg) brightness(98%) contrast(98%);
+    }
+
+    .decor-img_sun{
+        width: 13%;
+        top: 40%;
+        left: -6.5%;
+        filter: invert(67%) sepia(28%) saturate(3699%) hue-rotate(5deg) brightness(100%) contrast(102%);    
+    }
+
+    .decor-img_thunder{
+        width: 8%;
+        bottom: -5%;
+        right: 40%;
+        filter: invert(74%) sepia(25%) saturate(2927%) hue-rotate(323deg) brightness(99%) contrast(104%);    }
+
+
+
+
+/* headings */
+
+.main-heading{
+    padding: 5% 0;
+    display: flex;
+}
+
+.main-heading_1{
+    font-family: var(--p-font);
+    font-weight: 400;
+    font-size: 12rem;
+    background-color: #fff;
+}
+
+
+.main-heading_2{
+    transform: rotate(-90deg) translateY(40px);
+    /* position: absolute; */
+    overflow: hidden;
+    font-family: var(--s-font);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.main-heading_2 span{ 
+    margin: 0 0 0 5px;
+    font-family: var(--q-font);
+    font-weight: normal;
+}
+
+.info-heading{
+    color: #f6f5f5;
+    font-family: var(--p-font);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+    .info-heading_top{
+        font-size: 5.8rem;
+        font-weight: normal;
+        margin: 20% 0 0 0;
+    }
+
+    .info-heading_top span{
+        font-size: 3rem;
+        font-weight: normal;
+        margin: 20% 0 0 0;
+    }
+
+    .info-heading_mid{
+        font-size: 2.5rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: -14% 0 0 0;
+    }
+
+    .info-heading_mid_active{
+        font-size: 2.8rem;
+        font-weight: normal;
+        text-align: center;
+        margin: -14% 0 0 0;
+    }
+
+    .info-heading_mid span{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: -10% 0 0 0;
+        /* color: ; */
+        font-style: italic;
+    }
+
+    .info-heading_bot{
+        font-size: 2.3rem;
+        font-weight: lighter;
+        margin: 0 0 5% 0;
+    }
+
+    .weatherIcon{    
+        position: absolute;
+        top: 1%;
+        right: 104%;
+        width: 7rem;
+    }
+
+
+
+
+
+#landing{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--p-blue);
+}
+
+.data-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    width: 70vw;
+
+}
+
+.main-heading{
+    height: 30vh;
+}
+
+.input-area{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0 0 0;
+
+}
+
+    .form-input_city,  .form-input_units{
+        height: 3.2rem;
+        width: 20rem;
+        background-color: var(--s-grey);
+        border: 0.1px solid rgb(221, 220, 220);
+        padding: 2px 15px;
+        font-family: var(--s-font);
+        font-size: 1.1rem;
+        border-radius: 2px;
+    }
+
+    .form-city::placeholder{
+        font-size: 1.4rem;
+        color: var(--p-grey);
+    }
+
+    .form-input_city:focus, .form-input_units:focus{
+        box-shadow: 0px 0px 3px 1px var(--p-blue);
+
+
+    }
+
+    .form-input_units{
+        width: 22rem;
+        margin: 6% 0 16% 0;
+        /* padding: 10px 0 0 0;     */
+    }
+
+    .form-input_submit{
+        margin: 20px 0 0 0;
+        width: 15rem;
+        height: 4.5rem;
+        font-size: 1.1rem;
+        padding: 6% 0;
+        border-radius: 5px;
+        border: 1px solid var(--p-blue);
+        box-shadow: 1px 1px 1px 1px #015b8b;
+        color: var(--p-blue);
+        font-family: var(--s-font);
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-block;        
+
+        overflow: hidden;
+        transition: all 0.6s;
+    }
+
+
+        .form-input_submit i{
+            color: rgb(233, 190, 0);
+        }
+
+        .button-wave{
+            position: relative; 
+            transition: 0.6s all;
+        }
+/* 
+        .form-input_submit:hover .button-wave{
+            transform: translateY(-110px);
+        } */
+        .form-input_submit:hover{
+            background-color: var(--p-blue);
+            color: #ffffff;
+            border: 1px solid #015b8b;
+        }
+
+
+
+.footer{
+    background-color: #522;
+    height: 10vh;
+    visibility: hidden;
+
+}
+
+
+
+
+
+
+
+.info-side{
+    height: 100vh;
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    backdrop-filter: blur(5px);
+}
+
+/* .info-side_outer{
+    background: url(resources/clear.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+} */
+
+/* thunderstorm */
+.weather-200d{
+    background: url(resources/tstormD.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.weather-200n{
+    background: url(resources/tstormN.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+
+/* drizzle */
+
+.weather-300d{
+    background: url(resources/drizzle.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.weather-300n{
+    background: url(resources/drizzle.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+
+/* rain */
+.weather-500d{
+    background: url(resources/rainy.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.weather-500n{
+    background: url(resources/rainy.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+/* atmosphere (to be done) 
+https://openweathermap.org/weather-conditions
+*/
+.weather-700d{
+    background: url(resources/haze.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.weather-700n{
+    background: url(resources/haze.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+/* snow */
+.weather-600d{
+    background: url(resources/snowD.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.weather-600n{
+    background: url(resources/snowN.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+
+
+
+.weather-800d{
+    background: url(resources/clearD.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.weather-800n{
+    background: url(resources/clearN.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+
+.weather-801d{
+    background: url(resources/cloudy.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+
+.weather-801n{
+    background: url(resources/cloudy.jpg);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px){
+    #landing{
+        flex-direction: column;
+    }
+
+    .data-side{
+        width: 100vw;
+    }
+    
+    .info-side{
+        width: 100vw;
+    }
+}

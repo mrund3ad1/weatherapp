@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherCity</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans:ital,wght@1,300&family=Raleway:wght@300;400&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div id="landing">
+        <img class="decor-img decor-img_cloud" src="resources/cloud.svg" alt="">
+        <img class="decor-img decor-img_sun" src="resources/sun.svg" alt="">
+        <img class="decor-img decor-img_thunder" src="resources/thunder.svg" alt="">
+
+        <div class="data-side">
+            <div class="main-heading">
+                <h1 class="main-heading_1">
+                    Weather
+                </h1>
+
+                <h2 class="main-heading_2">
+                    MADE
+                    <span class="main-heading_span">
+                        EASY
+                    </span>
+                </h2>
+            </div>
+
+
+       
+                <form action="/" method="post" class="input-area">
+                    <input type="text" class="form-input_city" placeholder="Enter your city..." name="cityName">
+                    <select class="form-input_units" name="unit">
+                        <option value="" selected disabled hidden>Select Unit...</option>
+                        <option value="Metric">Metric</option>
+                        <option value="Imperial">Imperial</option>
+                        <option value="SI">SI</option>
+                      </select>
+                        <button class="form-input_submit" type="submit">Let's get the weather! <i class="far fa-sun"></i>
+                        <img src="resources/button-wave.svg" class="button-wave" alt="">
+                    </button>
+                </form>
+           
+
+            <div class="footer">
+                Lorem ipsum dolor sit amet 
+            </div>
+
+        </div>
+
+
+
+
+        <div class="info-side">
+            <h2 class="info-heading info-heading_top">
+                Hi :)
+            </h2>
+
+            <h4 class="info-heading info-heading_mid">
+                Please enter a city, we're really excited to serve you.
+            </h4>
+
+            <h3 class="info-heading info-heading_bot">
+                Earth, Milkyway
+            </h3>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/2df627c809.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
